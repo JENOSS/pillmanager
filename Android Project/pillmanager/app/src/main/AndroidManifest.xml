@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hyebeen.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvMOOh8lsFMhc8TzDTXaezHs6Z0l9eHnM" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PopUp_info"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".PopUp_reset"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".MediInfo2" />
+
+        <activity
+            android:name=".Medi_setting"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".PopUp_alamSetting"
+            android:theme="@android:style/Theme.Dialog"/>
+
+
+        <service
+            android:name=".MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFireBaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Declare  Alarm Broadcast receiver here -->
+        <receiver android:name=".AlarmReceiver" />
+
+        <!-- Declare  Alarm Notification Service here -->
+        <service android:name=".AlarmNotificationService" />
+
+        <activity android:name=".PharmacyLocation" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".All_eaten"
+            android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+
+</manifest>

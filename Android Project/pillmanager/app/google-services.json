@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "552969067562",
+    "firebase_url": "https://smartmedicinemanager.firebaseio.com",
+    "project_id": "smartmedicinemanager",
+    "storage_bucket": "smartmedicinemanager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552969067562:android:c587e9cba35324f3",
+        "android_client_info": {
+          "package_name": "com.example.hyebeen.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552969067562-3in115rar0fmve7563ivdgghvlddgj4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj1XvRCLL8nkW5ydA5uXu6e7FMfdovgmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
